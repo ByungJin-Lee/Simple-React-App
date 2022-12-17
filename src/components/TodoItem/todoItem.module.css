@@ -1,0 +1,9 @@
+.root {
+  min-width: 250px;
+  text-align: left;
+}
+
+.title {
+  min-width: 100px;
+  display: inline-block;
+}

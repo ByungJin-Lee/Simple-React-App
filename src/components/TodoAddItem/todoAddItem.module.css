@@ -1,0 +1,26 @@
+.root {
+  margin: 10px 0px;
+  border: 1px solid #eee;
+  font-size: 1.2em;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.input {
+  font-size: inherit;
+  padding: 0.5em 0.7em;
+}
+
+.input:hover,
+.input:focus {
+  outline: none;
+}
+
+.button {
+  border: none;
+  background-color: aquamarine;
+  margin-left: 0.2em;
+  font-size: inherit;
+  padding: 0.5em 0.7em;
+  cursor: pointer;
+}
