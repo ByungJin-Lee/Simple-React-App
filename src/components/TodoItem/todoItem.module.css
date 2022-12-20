@@ -1,9 +1,40 @@
 .root {
+  --content-pad: 0.3em;
+  --root-padding: 0.2em;
+
+  padding: var(--root-padding);
   min-width: 250px;
   text-align: left;
+  margin: 5px 0px;
+  border: 1px solid #ddd;
 }
 
 .title {
-  min-width: 100px;
+  width: 250px;
   display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+.important {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.preview {
+}
+
+.preview > * {
+  padding: var(--content-pad);
+}
+
+.date_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner {
+  padding: 0.8em;
 }

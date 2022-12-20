@@ -7,7 +7,12 @@ const Repo = {
   create,
   read,
   del,
-  update,
+  update: (id, obj) => {
+    return update(id, {
+      ...obj,
+      updatedAt: Date.now(),
+    });
+  },
 };
 
 export default Repo;

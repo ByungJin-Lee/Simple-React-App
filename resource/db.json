@@ -1,3 +1,36 @@
 {
-  "todo": []
+  "todo": [
+    {
+      "title": "할일 1",
+      "important": "normal",
+      "solved": false,
+      "createdAt": 1671534794329,
+      "updatedAt": 1671534794329,
+      "id": 1
+    },
+    {
+      "title": "할일 2",
+      "important": "normal",
+      "solved": true,
+      "createdAt": 1671534795994,
+      "updatedAt": 1671534823118,
+      "id": 2
+    },
+    {
+      "title": "중요한 할일 1",
+      "important": "warning",
+      "solved": true,
+      "createdAt": 1671534805212,
+      "updatedAt": 1671534824701,
+      "id": 3
+    },
+    {
+      "title": "특별한 할일 1",
+      "important": "special",
+      "solved": false,
+      "createdAt": 1671534819451,
+      "updatedAt": 1671534819451,
+      "id": 5
+    }
+  ]
 }

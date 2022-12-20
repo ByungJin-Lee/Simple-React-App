@@ -1,10 +1,12 @@
 import { Route, Routes } from "react-router-dom";
-import TodoPage from "../TodoPage";
+import Todo from "../Todo";
+import Search from "../Search";
 
 const RoutedContent = () => {
   return (
     <Routes>
-      <Route path="/" element={<TodoPage />} />
+      <Route path="/" element={<Todo />} />
+      <Route path="/search" element={<Search />} />
     </Routes>
   );
 };

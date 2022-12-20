@@ -1,24 +1,14 @@
 import Style from "./todoView.module.css";
-
-import usePending from "../../hooks/usePending";
-import Repo from "../../lib/todo";
-import Loading from "../Loading";
 import TodoItem from "../TodoItem/TodoItem";
-import { useDependencyValue } from "../../hooks/useDependencyContext";
 
-// json-server로 부터 todo list를 가져옴.
-const fetch = () => Repo.read();
-
-const TodoView = () => {
-  const dependency = useDependencyValue();
-  const { data, pending } = usePending(fetch, dependency);
-
-  if (pending) return <Loading />;
-
+const TodoView = ({ data }) => {
   return (
     <div className={Style.root}>
-      {Array.isArray(data) &&
-        data.map((item) => <TodoItem key={item.id} todo={item} />)}
+      {Array.isArray(data) && data.length > 0 ? (
+        data.map((item) => <TodoItem key={item.id} todo={item} />)
+      ) : (
+        <h3 style={{ textAlign: "center" }}>결과 없음</h3>
+      )}
     </div>
   );
 };
